@@ -3,281 +3,374 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>How to Use AI in VAT Compliance? — Nationaal Btw Congres 2026</title>
-
-<!-- Reveal.js core -->
+<title>AI Agents in Tax — International Taxation in the New Global Order 2026</title>
 <link rel="stylesheet" href="vendor/reveal.js/reset.css">
 <link rel="stylesheet" href="vendor/reveal.js/reveal.css">
-
-<!-- Typefaces: Newsreader (display) + IBM Plex Sans (text) -->
-<link rel="stylesheet" href="fonts/fonts.css">
-
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div class="reveal">
 <div class="slides">
 
-<!-- ============ 1. TITLE ============ -->
 <section id="title">
-  <div class="title-lead">
-    <div class="title-label" lang="nl">Nationaal Btw Congres 2026</div>
-    <h2 class="title-main" lang="nl">Hoe kan AI het btw-compliance proces vergemakkelijken?</h2>
-    <p class="title-sub">How to use AI in VAT Compliance?</p>
+  <img class="logo" src="images/uva-logo.png" alt="Universiteit van Amsterdam">
+  <div class="title-deco" aria-hidden="true">
+    <span class="rule-v"></span>
+    <span class="dot dot-olive"></span>
+    <span class="dot dot-orange"></span>
+    <span class="dot dot-blush"></span>
+    <span class="dot dot-blue"></span>
+    <span class="dot dot-red"></span>
   </div>
-  <div class="title-byline">
-    <div class="title-author">Dr Aleksandra Bal</div>
-    <div class="title-company">Stripe</div>
-    <div class="title-date">30 October 2026</div>
-  </div>
-  <svg class="geo-accent" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
-    <rect x="80" y="90" width="110" height="65" fill="#00D4FF"/>
-    <rect x="105" y="60" width="90" height="60" fill="#0A2540"/>
-    <rect x="125" y="110" width="80" height="70" fill="#635BFF"/>
+  <h1 class="title-h">AI Agents in Tax</h1>
+  <p class="title-sub">Panel: Harnessing AI and Blockchain for Enhanced Tax Compliance</p>
+  <p class="title-speaker">Dr Aleksandra Bal  |  Stripe</p>
+  <p class="title-event">International Taxation in the New Global Order  |  Amsterdam, 12 November 2026</p>
+  <div class="footer-rule"></div>
+  <p class="footer-left">International Taxation in the New Global Order  |  12–13 November 2026</p>
+  <p class="footer-actl">ACTL</p>
+  <p class="footer-num">1</p>
+</section>
+
+<section id="autonomy">
+  <img class="logo" src="images/uva-logo.png" alt="Universiteit van Amsterdam">
+  <h2 class="slide-title">From assistive to autonomous</h2>
+  <div class="title-rule"></div>
+  <blockquote class="quote">
+    <p class="quote-text">“You should be designing loops that prompt your agents.”</p>
+    <p class="quote-by">Peter Steinberger, creator of OpenClaw, June 2026</p>
+  </blockquote>
+  <svg class="spectrum" viewBox="0 0 1280 110" role="img" aria-label="A line from assistive to autonomous AI, with a question mark marking where tax should sit.">
+    <defs>
+      <marker id="arr-spec" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" orient="auto" markerUnits="userSpaceOnUse">
+        <path d="M0 0 L10 5 L0 10 Z" fill="#333333"/>
+      </marker>
+    </defs>
+    <line x1="73" y1="33" x2="1014" y2="33" stroke="#333333" stroke-width="2" marker-end="url(#arr-spec)"/>
+    <circle cx="73" cy="33" r="6" fill="#FFFFFF" stroke="#333333" stroke-width="2"/>
+    <circle cx="536.5" cy="33" r="6" fill="#FFFFFF" stroke="#333333" stroke-width="2"/>
+    <circle cx="1000" cy="33" r="6" fill="#FFFFFF" stroke="#333333" stroke-width="2"/>
+    <circle cx="703.4" cy="33" r="21" fill="#FFFFFF" stroke="#1E1E1E" stroke-width="2"/>
+    <text x="703.4" y="34" text-anchor="middle" dominant-baseline="central" font-size="22" font-weight="700" fill="#1E1E1E">?</text>
+    <text x="73" y="68" text-anchor="middle" font-size="18" font-weight="700" fill="#333333">ASSISTIVE</text>
+    <text x="1000" y="68" text-anchor="middle" font-size="18" font-weight="700" fill="#333333">AUTONOMOUS</text>
   </svg>
+  <p class="question">How much autonomy should we give agents in tax?</p>
+  <div class="footer-rule"></div>
+  <p class="footer-left">International Taxation in the New Global Order  |  12–13 November 2026</p>
+  <p class="footer-actl">ACTL</p>
+  <p class="footer-num">2</p>
 </section>
 
-<!-- ============ 2. AGENDA ============ -->
-<section id="agenda" class="wash">
-  <h2 class="slide-title">Agenda</h2>
-  <div class="slide-body">
-    <ol class="agenda">
-      <li><span class="agenda-n">1</span><span class="agenda-part">Background</span></li>
-      <li><span class="agenda-n">2</span><span class="agenda-part">General-purpose AI for indirect tax research</span></li>
-      <li><span class="agenda-n">3</span><span class="agenda-part">Agents</span></li>
-    </ol>
-  </div>
-</section>
-
-<!-- ============ 3. WHERE AI ACTUALLY IS RIGHT NOW ============ -->
-<section id="landscape">
-  <h2 class="slide-title">Where AI Actually Is Right Now</h2>
-  <div class="slide-body">
-    <ul class="bullets">
-      <li>New models every week</li>
-      <li>Open-weight models: good enough, far cheaper</li>
-      <li>From assistive to autonomous</li>
-      <li>From seats to usage: AI is increasingly metered</li>
-    </ul>
-  </div>
-</section>
-
-<!-- ============ 4. AGENDA: PART 2 ============ -->
-<section id="agenda-2" class="wash">
-  <h2 class="slide-title">Agenda</h2>
-  <div class="slide-body">
-    <ol class="agenda recap">
-      <li><span class="agenda-n">1</span><span class="agenda-part">Background</span></li>
-      <li class="is-current"><span class="agenda-n">2</span><span class="agenda-part">General-purpose AI for indirect tax research</span></li>
-      <li><span class="agenda-n">3</span><span class="agenda-part">Agents</span></li>
-    </ol>
-  </div>
-</section>
-
-<!-- ============ 5. THE APP IS NOT THE MODEL ============ -->
-<section id="apps">
-  <h2 class="slide-title">The App Is Not the Model</h2>
-  <div class="slide-body">
-    <ul class="bullets">
-      <li>The model knows only what you put in front of it</li>
-      <li>Memory, projects, instructions, connectors: those are app layers</li>
-      <li>Connect your Drive or folders; skip the upload</li>
-      <li>Connected &ne; read</li>
-    </ul>
-  </div>
-</section>
-
-<!-- ============ 6. MATCH THE MODEL TO THE TASK ============ -->
-<section id="match">
-  <h2 class="slide-title">Match the Model to the Task</h2>
-  <div class="slide-body">
-    <div class="table-block">
-      <div class="tiers">
-        <div class="tier">
-          <h3>Flagship</h3>
-          <p>Highest performance, for the hardest reasoning. Expensive, and often slower.</p>
-        </div>
-        <div class="tier is-pick">
-          <p class="tier-tag">For tax work</p>
-          <h3>Workhorse</h3>
-          <p>Balanced capability, price, and speed. About 80% of day-to-day work.</p>
-        </div>
-        <div class="tier">
-          <h3>Light</h3>
-          <p>Small, fast, and cheap. Bulk processing, automations, and sub-agents.</p>
-        </div>
+<section id="shift">
+  <img class="logo" src="images/uva-logo.png" alt="Universiteit van Amsterdam">
+  <h2 class="slide-title">From saying to doing</h2>
+  <div class="title-rule"></div>
+  <div class="pairs">
+    <div class="pair">
+      <div class="pair-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"/>
+        </svg>
       </div>
-      <p class="table-note">Turn reasoning up to analyse, down to draft. The newest model is rarely the right one.</p>
+      <div class="pair-copy">
+        <p class="pair-label">AI says something wrong</p>
+        <p class="pair-text">A chatbot drafts a memo. A human reads it before anything happens.</p>
+      </div>
     </div>
-  </div>
-</section>
-
-<!-- ============ 7. HOW DOES WEB SEARCH WORK? ============ -->
-<section id="search">
-  <h2 class="slide-title">How Does Web Search Work?</h2>
-  <div class="slide-body">
-    <ul class="bullets">
-      <li>Search is a tool, not a model capability</li>
-      <li>It returns a few results and snippets, not the web</li>
-      <li>Fetching a page is a separate, optional step</li>
-      <li>The model reasons over what came back</li>
-      <li>A pasted URL isn't necessarily a read page</li>
-    </ul>
-  </div>
-</section>
-
-<!-- ============ 8. HOW TO ASK ============ -->
-<section id="how-to-ask">
-  <h2 class="slide-title">How to Ask</h2>
-  <div class="slide-body">
-    <div class="moves">
-      <div class="move">
-        <div class="n">1</div>
-        <div>
-          <h3>Frame it</h3>
-          <p class="bits"><span>Context</span><span>Examples</span><span>Structure</span></p>
-        </div>
+    <div class="pair">
+      <div class="pair-icon fail" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/>
+          <path d="m21.854 2.147-10.94 10.939"/>
+        </svg>
       </div>
-      <div class="move">
-        <div class="n">2</div>
-        <div>
-          <h3>Define done</h3>
-          <p class="bits"><span>Format</span><span>Success criteria</span><span>Permission to say &ldquo;I don't know&rdquo;</span></p>
-        </div>
-      </div>
-      <div class="move">
-        <div class="n">3</div>
-        <div>
-          <h3>Work the loop</h3>
-          <p class="bits"><span>Questions first</span><span>Don't build on mistakes</span><span>Review adversarially</span></p>
-        </div>
-      </div>
-      <div class="move">
-        <div class="n">4</div>
-        <div>
-          <h3>Start over when it drifts</h3>
-          <p>Cheaper than arguing with it</p>
-        </div>
+      <div class="pair-copy">
+        <p class="pair-label">AI does something wrong</p>
+        <p class="pair-text">An agent sends the email, updates the record, submits the filing.</p>
       </div>
     </div>
   </div>
+  <div class="vdiv" aria-hidden="true"></div>
+  <svg class="risk" viewBox="0 0 380 300" role="img" aria-label="Risk grows as agents get more agency and more autonomy.">
+    <defs>
+      <marker id="arr-risk" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto" markerUnits="userSpaceOnUse">
+        <path d="M0 0 L10 5 L0 10 Z" fill="#333333"/>
+      </marker>
+    </defs>
+    <text x="8" y="20" font-size="18" font-weight="700" fill="#333333">AUTONOMY</text>
+    <text x="8" y="42" font-size="18" fill="#333333">how independently it acts</text>
+    <line x1="40" y1="214" x2="40" y2="62" stroke="#333333" stroke-width="2" marker-end="url(#arr-risk)"/>
+    <line x1="40" y1="214" x2="360" y2="214" stroke="#333333" stroke-width="2" marker-end="url(#arr-risk)"/>
+    <circle cx="96" cy="188" r="11" fill="#FFFFFF" stroke="#333333" stroke-width="2"/>
+    <circle cx="194" cy="142" r="21" fill="#FFFFFF" stroke="#333333" stroke-width="2"/>
+    <circle cx="292" cy="96" r="38" fill="#D6553B"/>
+    <text x="40" y="242" font-size="18" font-weight="700" fill="#333333">AGENCY</text>
+    <text x="40" y="264" font-size="18" fill="#333333">what it is allowed to do</text>
+  </svg>
+  <p class="summary"><strong>Three failure modes:</strong> Excessive permissions  ·  Unclear scope  ·  Silent failure</p>
+  <div class="footer-rule"></div>
+  <p class="footer-left">International Taxation in the New Global Order  |  12–13 November 2026</p>
+  <p class="footer-actl">ACTL</p>
+  <p class="footer-num">3</p>
 </section>
 
-<!-- ============ 9. WHERE IT GOES WRONG ============ -->
-<section id="wrong" class="invert">
-  <h2 class="slide-title">Where It Goes Wrong</h2>
-  <div class="slide-body">
-    <ul class="bullets">
-      <li>Fluent isn't correct: invented citations, outdated law</li>
-      <li>Bad data in, confident answers out</li>
-      <li>Unreviewed drafts, passed on</li>
-      <li>Usage is metered: set a spend cap</li>
-    </ul>
-  </div>
-</section>
-
-<!-- ============ 10. AGENDA: PART 3 ============ -->
-<section id="agenda-3" class="wash">
-  <h2 class="slide-title">Agenda</h2>
-  <div class="slide-body">
-    <ol class="agenda recap">
-      <li><span class="agenda-n">1</span><span class="agenda-part">Background</span></li>
-      <li><span class="agenda-n">2</span><span class="agenda-part">General-purpose AI for indirect tax research</span></li>
-      <li class="is-current"><span class="agenda-n">3</span><span class="agenda-part">Agents</span></li>
-    </ol>
-  </div>
-</section>
-
-<!-- ============ 11. WHAT IS AN AGENT? ============ -->
-<section id="agent">
-  <h2 class="slide-title">What Is an Agent?</h2>
-  <div class="slide-body">
-    <ul class="bullets">
-      <li>Chat answers a question. An agent works toward a goal.</li>
-      <li>It loops: plan, act, check, repeat</li>
-      <li>A different path, sometimes a different answer, each run</li>
-      <li>A skill is its operating manual for a specific job</li>
-    </ul>
-  </div>
-</section>
-
-<!-- ============ 12. NOT EVERYTHING NEEDS AN AGENT ============ -->
-<section id="patterns">
-  <h2 class="slide-title">Not Everything Needs an Agent</h2>
-  <div class="slide-body">
-    <div class="table-block">
-      <div class="patterns">
-        <div class="pattern">
-          <h3>Workflow</h3>
-          <p>Fixed steps, every time. Breaks on exceptions.</p>
-        </div>
-        <div class="pattern">
-          <h3>AI workflow</h3>
-          <p>One step uses AI. Stays auditable.</p>
-        </div>
-        <div class="pattern">
-          <h3>Agentic workflow</h3>
-          <p>One step handed to an agent. Autonomy inside a fence.</p>
-        </div>
-        <div class="pattern">
-          <h3>Agent</h3>
-          <p>A goal, not a path. A different route each run.</p>
-        </div>
+<section id="permissions">
+  <img class="logo" src="images/uva-logo.png" alt="Universiteit van Amsterdam">
+  <h2 class="slide-title">Failure mode 1: Excessive permissions</h2>
+  <div class="title-rule"></div>
+  <p class="headline">You asked for a draft. It sent the message.</p>
+  <svg class="story" viewBox="0 0 560 250" role="img" aria-label="The instruction goes to an agent that can send, and the message is sent without review.">
+    <defs>
+      <marker id="arr-4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse">
+        <path d="M0 0 L10 5 L0 10 Z" fill="#333333"/>
+      </marker>
+    </defs>
+    <line x1="104" y1="90" x2="204" y2="90" stroke="#333333" stroke-width="2" marker-end="url(#arr-4)"/>
+    <line x1="268" y1="90" x2="468" y2="90" stroke="#333333" stroke-width="2" marker-end="url(#arr-4)"/>
+    <circle cx="72" cy="90" r="31" fill="#FFFFFF" stroke="#333333" stroke-width="2"/>
+    <circle cx="236" cy="90" r="31" fill="#FFFFFF" stroke="#333333" stroke-width="2"/>
+    <circle cx="500" cy="90" r="31" fill="#FFFFFF" stroke="#333333" stroke-width="2"/>
+    <circle cx="368" cy="90" r="27" fill="none" stroke="#D6553B" stroke-width="2" stroke-dasharray="4 3.5"/>
+    <svg x="58" y="76" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+      <circle cx="12" cy="7" r="4"/>
+    </svg>
+    <svg x="222" y="76" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M12 8V4H8"/>
+      <rect width="16" height="12" x="4" y="8" rx="2"/>
+      <path d="M2 14h2"/>
+      <path d="M20 14h2"/>
+      <path d="M15 13v2"/>
+      <path d="M9 13v2"/>
+    </svg>
+    <svg x="486" y="76" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/>
+      <path d="m21.854 2.147-10.94 10.939"/>
+    </svg>
+    <text x="72" y="140" text-anchor="middle" font-size="18" fill="#333333">
+      <tspan x="72">Tell my colleague</tspan>
+      <tspan x="72" dy="22">they were wrong</tspan>
+    </text>
+    <text x="236" y="140" text-anchor="middle" font-size="18" fill="#333333">
+      <tspan x="236">Agent with</tspan>
+      <tspan x="236" dy="22">send permission</tspan>
+    </text>
+    <text x="368" y="140" text-anchor="middle" font-size="18" fill="#333333">
+      <tspan x="368">Review:</tspan>
+      <tspan x="368" dy="22">skipped</tspan>
+    </text>
+    <text x="500" y="140" text-anchor="middle" font-size="18" fill="#333333">Sent</text>
+  </svg>
+  <div class="prevent">
+    <h3 class="prevent-h">How to prevent it</h3>
+    <div class="prow">
+      <div class="disc" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"/>
+          <circle cx="16.5" cy="7.5" r=".5" fill="currentColor"/>
+        </svg>
       </div>
-      <p class="table-note">The more autonomy, the more human review.</p>
+      <p>Least privilege: draft-only unless sending is the task</p>
+    </div>
+    <div class="prow">
+      <div class="disc" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M13 19a4 4 0 00-8 0"/>
+          <path d="M16 10h2"/>
+          <path d="M16 14h2"/>
+          <circle cx="9" cy="12" r="3"/>
+          <rect x="2" y="5" width="20" height="14" rx="2"/>
+        </svg>
+      </div>
+      <p>A separate identity for each agent, not your login</p>
+    </div>
+    <div class="prow">
+      <div class="disc" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m16 11 2 2 4-4"/>
+          <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+          <circle cx="9" cy="7" r="4"/>
+        </svg>
+      </div>
+      <p>Human approval for the exact action: this message, this filing</p>
     </div>
   </div>
+  <div class="footer-rule"></div>
+  <p class="footer-left">International Taxation in the New Global Order  |  12–13 November 2026</p>
+  <p class="footer-actl">ACTL</p>
+  <p class="footer-num">4</p>
 </section>
 
-<!-- ============ 13. THREE QUESTIONS BEFORE YOU BUILD AN AGENT ============ -->
-<section id="questions">
-  <h2 class="slide-title">Three Questions Before<br>You Build an Agent</h2>
-  <div class="slide-body">
-    <table class="compare decide">
-      <caption class="sr-only">Three questions that decide between an agent and a workflow</caption>
-      <colgroup>
-        <col class="col-label">
-        <col>
-        <col>
-      </colgroup>
-      <thead>
-        <tr>
-          <th scope="col"></th>
-          <th scope="col">Yes &rarr; an agent may help</th>
-          <th scope="col">No &rarr; build a workflow</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">Is the task interpretation-heavy?</th>
-          <td>Taxability research for a new product</td>
-          <td>Applying a known rate; filing a return</td>
-        </tr>
-        <tr>
-          <th scope="row">Can you live with a different answer each run?</th>
-          <td>A research summary for review</td>
-          <td>A return figure or a tax calculation</td>
-        </tr>
-        <tr>
-          <th scope="row">Do the edge cases outnumber the rules?</th>
-          <td>Spotting anomalies across millions of transactions</td>
-          <td>Classifying a sale as intrastate, interstate or international by ship-from and ship-to</td>
-        </tr>
-      </tbody>
-    </table>
+<section id="scope">
+  <img class="logo" src="images/uva-logo.png" alt="Universiteit van Amsterdam">
+  <h2 class="slide-title">Failure mode 2: Unclear scope</h2>
+  <div class="title-rule"></div>
+  <p class="headline">A customer support bot treated a missing feature as a bug.</p>
+  <div class="story" role="img" aria-label="A user claims the tax engine is wrong; the agent agrees without reading the product limitations.">
+    <div class="bubbles">
+      <div class="bubble">
+        <span class="tail" aria-hidden="true"></span>
+        Your tax engine got this wrong.
+      </div>
+      <div class="bubble agent">
+        <span class="tail" aria-hidden="true"></span>
+        You’re right to criticise them.
+      </div>
+    </div>
+    <div class="source">
+      <div class="source-ring" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/>
+          <path d="M14 2v5a1 1 0 0 0 1 1h5"/>
+          <path d="M10 9H8"/>
+          <path d="M16 13H8"/>
+          <path d="M16 17H8"/>
+        </svg>
+      </div>
+      <p>Product limitations: not read</p>
+    </div>
   </div>
+  <p class="footnote"><em>Moffatt v. Air Canada</em>, 2024 BCCRT 149: a company is responsible for what its chatbot tells customers.</p>
+  <div class="prevent">
+    <h3 class="prevent-h">How to prevent it</h3>
+    <div class="prow">
+      <div class="disc" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m16 6 4 14"/>
+          <path d="M12 6v14"/>
+          <path d="M8 8v12"/>
+          <path d="M4 4v16"/>
+        </svg>
+      </div>
+      <p>Give the agent access to the right, up-to-date sources, and make it consult them</p>
+    </div>
+    <div class="prow">
+      <div class="disc" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 19H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.7.7 0 0 1 2 21.286V5a2 2 0 0 1 1.184-1.826"/>
+          <path d="m2 2 20 20"/>
+          <path d="M8.656 3H20a2 2 0 0 1 2 2v11.344"/>
+        </svg>
+      </div>
+      <p>Define what the agent must <strong>not</strong> say, not only what it should; hand the rest to a human</p>
+    </div>
+    <div class="prow">
+      <div class="disc" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m17 2 4 4-4 4"/>
+          <path d="M3 11v-1a4 4 0 0 1 4-4h14"/>
+          <path d="m7 22-4-4 4-4"/>
+          <path d="M21 13v1a4 4 0 0 1-4 4H3"/>
+        </svg>
+      </div>
+      <p>Test continuously: run the same hard questions many times, measure how often it fails, re-test after every change</p>
+    </div>
+  </div>
+  <div class="footer-rule"></div>
+  <p class="footer-left">International Taxation in the New Global Order  |  12–13 November 2026</p>
+  <p class="footer-actl">ACTL</p>
+  <p class="footer-num">5</p>
 </section>
 
-<!-- ============ 14. WHAT TO DO ON MONDAY ============ -->
-<section id="monday" class="invert">
-  <h2 class="slide-title">What to Do on Monday</h2>
-  <div class="slide-body">
-    <ul class="bullets">
-      <li>Use AI to reason; use a tax engine for the rate</li>
-      <li>Know what the model actually saw</li>
-      <li>Put AI on the one hard step, and a human after it</li>
-    </ul>
+<section id="silent">
+  <img class="logo" src="images/uva-logo.png" alt="Universiteit van Amsterdam">
+  <h2 class="slide-title">Failure mode 3: Silent failure</h2>
+  <div class="title-rule"></div>
+  <p class="headline">The database was down. The agent carried on.</p>
+  <svg class="story" viewBox="0 0 560 250" role="img" aria-label="Data retrieval fails, the agent invents data, and the final answer looks confident with no sign of the failure.">
+    <defs>
+      <marker id="arr-6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto" markerUnits="userSpaceOnUse">
+        <path d="M0 0 L10 5 L0 10 Z" fill="#333333"/>
+      </marker>
+    </defs>
+    <line x1="132" y1="70" x2="234" y2="70" stroke="#333333" stroke-width="2" marker-end="url(#arr-6)"/>
+    <line x1="302" y1="70" x2="434" y2="70" stroke="#333333" stroke-width="2" marker-end="url(#arr-6)"/>
+    <circle cx="100" cy="70" r="31" fill="#FFFFFF" stroke="#D6553B" stroke-width="2"/>
+    <circle cx="268" cy="70" r="31" fill="#FFFFFF" stroke="#333333" stroke-width="2" stroke-dasharray="4 3.5"/>
+    <circle cx="468" cy="70" r="31" fill="#FFFFFF" stroke="#333333" stroke-width="2"/>
+    <svg x="86" y="56" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#D6553B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M18 6 6 18"/>
+      <path d="m6 6 12 12"/>
+    </svg>
+    <svg x="254" y="56" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"/>
+      <path d="M20 2v4"/>
+      <path d="M22 4h-4"/>
+      <circle cx="4" cy="20" r="2"/>
+    </svg>
+    <svg x="454" y="56" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M20 6 9 17l-5-5"/>
+    </svg>
+    <text x="100" y="118" text-anchor="middle" font-size="18" fill="#333333">
+      <tspan x="100">Fetch buyer and</tspan>
+      <tspan x="100" dy="22">seller data</tspan>
+    </text>
+    <text x="268" y="118" text-anchor="middle" font-size="18" fill="#333333">Invents the data</text>
+    <text x="468" y="118" text-anchor="middle" font-size="18" fill="#333333">
+      <tspan x="468">Confident tax</tspan>
+      <tspan x="468" dy="22">treatment</tspan>
+    </text>
+    <path d="M68 168 v12 h232 v-12" fill="none" stroke="#333333" stroke-width="1.5"/>
+    <text x="184" y="200" text-anchor="middle" font-size="18" fill="#333333">Not visible in the final answer</text>
+  </svg>
+  <div class="prevent">
+    <h3 class="prevent-h">How to prevent it</h3>
+    <div class="prow">
+      <div class="disc" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m15 9-6 6"/>
+          <path d="M2.586 16.726A2 2 0 0 1 2 15.312V8.688a2 2 0 0 1 .586-1.414l4.688-4.688A2 2 0 0 1 8.688 2h6.624a2 2 0 0 1 1.414.586l4.688 4.688A2 2 0 0 1 22 8.688v6.624a2 2 0 0 1-.586 1.414l-4.688 4.688a2 2 0 0 1-1.414.586H8.688a2 2 0 0 1-1.414-.586z"/>
+          <path d="m9 9 6 6"/>
+        </svg>
+      </div>
+      <p>The harness stops when a required step fails; the model doesn't decide</p>
+    </div>
+    <div class="prow">
+      <div class="disc" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M15 12h-5"/>
+          <path d="M15 8h-5"/>
+          <path d="M19 17V5a2 2 0 0 0-2-2H4"/>
+          <path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3"/>
+        </svg>
+      </div>
+      <p>Log every action: trigger, what it read, tools called, errors, what it changed, who approved</p>
+    </div>
+    <div class="prow">
+      <div class="disc" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="6" cy="19" r="3"/>
+          <path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/>
+          <circle cx="18" cy="5" r="3"/>
+        </svg>
+      </div>
+      <p>Judge the path, not only the final answer</p>
+    </div>
   </div>
+  <div class="footer-rule"></div>
+  <p class="footer-left">International Taxation in the New Global Order  |  12–13 November 2026</p>
+  <p class="footer-actl">ACTL</p>
+  <p class="footer-num">6</p>
+</section>
+
+<section id="harness">
+  <img class="logo" src="images/uva-logo.png" alt="Universiteit van Amsterdam">
+  <div class="close-copy">
+    <p class="statement">A prompt instruction is a hope, not a control.</p>
+    <div class="statement-rule"></div>
+    <p class="support">The prompt tells the agent what to do. The harness decides what it is allowed to do, when it must stop, and what it must log.</p>
+  </div>
+  <svg class="harness" viewBox="0 0 312 370" role="img" aria-label="The agent sits inside a harness that controls what it can do.">
+    <circle cx="156" cy="156" r="150" fill="none" stroke="#819FC8" stroke-width="12"/>
+    <circle cx="156" cy="156" r="36" fill="#D6553B"/>
+    <text x="156" y="202" text-anchor="middle" dominant-baseline="hanging" font-size="18" font-weight="700" fill="#333333">AGENT</text>
+    <text x="156" y="328" text-anchor="middle" dominant-baseline="hanging" font-size="18" font-weight="700" fill="#333333">HARNESS</text>
+  </svg>
+  <div class="footer-rule"></div>
+  <p class="footer-left">International Taxation in the New Global Order  |  12–13 November 2026</p>
+  <p class="footer-actl">ACTL</p>
+  <p class="footer-num">7</p>
 </section>
 
 </div>
@@ -290,8 +383,9 @@ Reveal.initialize({
   height: 720,
   margin: 0,
   controls: true,
+  controlsLayout: 'edges',
   progress: false,
-  slideNumber: 'c/t',
+  slideNumber: false,
   hash: true,
   transition: 'fade',
   center: false,
